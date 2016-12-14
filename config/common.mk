@@ -4,6 +4,10 @@ PRODUCT_BRAND ?= LineageOS
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
     
+# Brevent
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Brevent/Brevent.apk:system/app/Brevent/Brevent.apk
+
 # Nova Launcher
 PRODUCT_COPY_FILES += \
  	vendor/cm/prebuilt/common/apk/NovaLauncher.apk:system/priv-app/NovaLauncher/NovaLauncher.apk
