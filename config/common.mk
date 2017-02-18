@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
     CMUpdater \
-    CyanogenSetupWizard \
+    LineageSetupWizard \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
