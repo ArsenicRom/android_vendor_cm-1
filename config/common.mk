@@ -3,6 +3,10 @@ PRODUCT_BRAND ?= LineageOS
 # Boot animation include
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+    
+# Nova Launcher
+PRODUCT_COPY_FILES += \
+ 	vendor/cm/prebuilt/common/apk/NovaLauncher.apk:system/priv-app/NovaLauncher/NovaLauncher.apk
 
 ifdef CM_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
