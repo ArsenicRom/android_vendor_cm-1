@@ -141,7 +141,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
     CMUpdater \
-    CustomTiles \
     LineageSetupWizard \
     ExactCalculator \
     Jelly \
