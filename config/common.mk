@@ -105,9 +105,6 @@ PRODUCT_COPY_FILES += \
 # Include CM audio files
 include vendor/cm/config/cm_audio.mk
 
-# Theme engine
-include vendor/cm/config/themes_common.mk
-
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/cm/config/cmsdk_common.mk
@@ -145,13 +142,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    CMUpdater \
     LineageSetupWizard \
     ExactCalculator \
     Jelly \
-    LiveLockScreenService \
     LockClock \
     Trebuchet \
+    Updater \
     WallpaperPicker \
     WeatherProvider
 
@@ -333,6 +329,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.version=$(LINEAGE_VERSION) \
     ro.cm.releasetype=$(CM_BUILDTYPE) \
+    ro.cm.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(LINEAGE_VERSION) \
     ro.cmlegal.url=https://lineageos.org/legal
 
